@@ -25,13 +25,16 @@ public class CrimeFragment extends Fragment {
     private static final String DIALOG_DATE = "DialogDate";
 
     private SimpleDateFormat dtFormat = new SimpleDateFormat("MM/dd/yyyy");
+    private SimpleDateFormat tmFormat = new SimpleDateFormat("hh:mm:ss");
 
     private static final int REQUEST_DATE = 0;
 
     private Crime mCrime;
     private EditText mTitleField;
     private Button mDateButton;
+    private Button mTimeButton;
     private CheckBox mSolvedCheckBox;
+
 
     public static CrimeFragment newInstance(UUID crimeId) {
         Bundle args = new Bundle();
@@ -83,6 +86,8 @@ public class CrimeFragment extends Fragment {
                 dialog.show(manager, DIALOG_DATE);
             }
         });
+        mTimeButton = (Button) v.findViewById(R.id.crime_time);
+        updateTime();
 
         mSolvedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
         mSolvedCheckBox.setChecked(mCrime.isSolved());
@@ -107,7 +112,12 @@ public class CrimeFragment extends Fragment {
                     .getSerializableExtra(DatePickerFragment.EXTRA_DATE);
             mCrime.setDate(date);
             updateDate();
+            updateTime();
         }
+    }
+
+    private void updateTime() {
+        mTimeButton.setText(tmFormat.format(mCrime.getDate()));
     }
 
     private void updateDate() {

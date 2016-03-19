@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffb76131-352e-47b2-b56c-590724442c94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" afterPath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java" afterPath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java" />
-    </list>
+    <list default="true" id="ffb76131-352e-47b2-b56c-590724442c94" name="Default" comment="" />
     <ignored path="src.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +32,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="20" />
-    <option name="y" value="88" />
+    <option name="y" value="139" />
     <option name="width" value="1260" />
     <option name="height" value="577" />
   </component>
@@ -193,7 +190,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="88" width="1260" height="577" extended-state="0" />
+    <frame x="20" y="139" width="1260" height="577" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
