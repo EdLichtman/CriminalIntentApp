@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffb76131-352e-47b2-b56c-590724442c94" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CriminalIntentApp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/appcompat_v7_22_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/recyclerview_v7_22_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/support_annotations_22_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/libraries/support_v4_22_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" afterPath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java" afterPath="$PROJECT_DIR$/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java" />
     </list>
     <ignored path="src.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -199,7 +194,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="88" width="1260" height="577" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
