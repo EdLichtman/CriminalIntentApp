@@ -29,7 +29,6 @@ public class CrimeFragment extends Fragment {
     private SimpleDateFormat tmFormat = new SimpleDateFormat("hh:mm");
 
     private static final int REQUEST_DATE = 0;
-    private static final int REQUEST_TIME = 1;
 
     private Crime mCrime;
     private EditText mTitleField;
@@ -83,19 +82,22 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager manager = getFragmentManager();
-                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getDate());
+                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getDate(),
+                        DatePickerFragment.ARG_DATE);
                 dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
                 dialog.show(manager, DIALOG_DATE);
             }
         });
+
         mTimeButton = (Button) v.findViewById(R.id.crime_time);
         updateTime();
         mTimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager manager = getFragmentManager();
-                TimePickerFragment dialog = TimePickerFragment.newInstance(mCrime.getDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_TIME);
+                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getDate(),
+                        DatePickerFragment.ARG_TIME);
+                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
                 dialog.show(manager, DIALOG_TIME);
             }
         });
@@ -126,13 +128,6 @@ public class CrimeFragment extends Fragment {
             updateTime();
         }
 
-        if (requestCode == REQUEST_TIME) {
-            Date time = (Date) data
-                    .getSerializableExtra(TimePickerFragment.EXTRA_TIME);
-            mCrime.setDate(time);
-            updateDate();
-            updateTime();
-        }
     }
 
     private void updateTime() {
