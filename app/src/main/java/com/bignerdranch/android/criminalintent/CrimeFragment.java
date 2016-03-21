@@ -83,11 +83,19 @@ public class CrimeFragment extends Fragment {
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager manager = getFragmentManager();
-                DatePickerFragment datePicker = new DatePickerFragment();
-                PickerFragment dialog = datePicker.newInstance(mCrime.getDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
-                dialog.show(manager, DIALOG_DATE);
+                boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+                if (tabletSize) {
+                    FragmentManager manager = getFragmentManager();
+                    DatePickerFragment datePicker = new DatePickerFragment();
+                    PickerFragment dialog = datePicker.newInstance(mCrime.getDate());
+                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
+                    dialog.show(manager, DIALOG_DATE);
+                } else {
+                    Intent intent = new Intent(CrimeFragment.this.getActivity(),
+                            DatePickerActivity.class);
+                    intent.putExtra(PickerFragment.EXTRA_DATE, mCrime.getDate());
+                    startActivityForResult(intent, REQUEST_DATE);
+                }
             }
         });
 
@@ -96,11 +104,19 @@ public class CrimeFragment extends Fragment {
         mTimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager manager = getFragmentManager();
-                TimePickerFragment timePicker = new TimePickerFragment();
-                PickerFragment dialog = timePicker.newInstance(mCrime.getDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
-                dialog.show(manager, DIALOG_TIME);
+                boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+                if (tabletSize) {
+                    FragmentManager manager = getFragmentManager();
+                    TimePickerFragment timePicker = new TimePickerFragment();
+                    PickerFragment dialog = timePicker.newInstance(mCrime.getDate());
+                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
+                    dialog.show(manager, DIALOG_TIME);
+                } else {
+                    Intent intent = new Intent(CrimeFragment.this.getActivity(),
+                            TimePickerActivity.class);
+                    intent.putExtra(PickerFragment.EXTRA_DATE, mCrime.getDate());
+                    startActivityForResult(intent, REQUEST_DATE);
+                }
             }
         });
 

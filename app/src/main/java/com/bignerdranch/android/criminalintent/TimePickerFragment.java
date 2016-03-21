@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TimePicker;
 
 import java.util.Calendar;
@@ -16,8 +18,6 @@ import java.util.Date;
  * Created by EdwardLichtman on 3/20/16.
  */
 public class TimePickerFragment extends PickerFragment{
-
-    public static final String EXTRA_TIME = "com.bignerdranch.android.criminalintent.date";
 
     private TimePicker mTimePicker;
 
@@ -38,14 +38,18 @@ public class TimePickerFragment extends PickerFragment{
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        setDatePickerTime(mTimePicker.getCurrentHour(),
-                                mTimePicker.getCurrentMinute());
-                        Calendar date = Calendar.getInstance();
-                        date.set(year, month, day, hour, minute, 0);
-                        sendResult(Activity.RESULT_OK, date.getTime());
+                        implementOnClick();
                     }
                 })
                 .create();
+    }
+    @Override
+    protected void implementOnClick() {
+        setDatePickerTime(mTimePicker.getCurrentHour(),
+                mTimePicker.getCurrentMinute());
+        Calendar date = Calendar.getInstance();
+        date.set(year, month, day, hour, minute, 0);
+        sendResult(Activity.RESULT_OK, date.getTime());
     }
 
     @Override
@@ -57,5 +61,24 @@ public class TimePickerFragment extends PickerFragment{
         TimePickerFragment fragment = new TimePickerFragment();
         fragment.setArguments(args);
         return fragment;
+    }
+
+    @Override
+    protected View getView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.view_time, container, false);
+    }
+
+    @Override
+    protected void buildPickerView(View v) {
+        mTimePicker = (TimePicker) v.findViewById(R.id.view_time_time_picker);
+        mTimePicker.setCurrentHour(hour);
+        mTimePicker.setCurrentMinute(minute);
+        mButtonOk = (Button) v.findViewById(R.id.view_time_picker_button);
+        mButtonOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                implementOnClick();
+            }
+        });
     }
 }
