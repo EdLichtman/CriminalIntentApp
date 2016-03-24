@@ -9,44 +9,44 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.DatePicker;
+import android.widget.TimePicker;
 
 import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by EdwardLichtman on 3/15/16.
+ * Created by EdwardLichtman on 3/20/16.
  */
-public class DatePickerFragment extends PickerFragment {
+public class TimePickerFragment extends PickerFragment{
 
-    private DatePicker mDatePicker;
+    private TimePicker mTimePicker;
 
     @Override
     protected Dialog buildAlertDialog() {
 
-        View v = LayoutInflater.from(getActivity())
-                .inflate(R.layout.dialog_date, null);
 
-        mDatePicker = (DatePicker) v.findViewById(R.id.dialog_date_date_picker);
-        mDatePicker.init(year, month, day, null);
+        View v = LayoutInflater.from(getActivity())
+                .inflate(R.layout.dialog_time, null);
+
+        mTimePicker = (TimePicker) v.findViewById(R.id.dialog_time_time_picker);
+        mTimePicker.setCurrentHour(hour);
+        mTimePicker.setCurrentMinute(minute);
 
         return new AlertDialog.Builder(getActivity())
                 .setView(v)
-                .setTitle(R.string.date_picker_title)
-                .setPositiveButton(android.R.string.ok,
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                implementOnClick();
-                            }
-                        })
+                .setTitle(R.string.time_picker_title)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        implementOnClick();
+                    }
+                })
                 .create();
     }
-
     @Override
     protected void implementOnClick() {
-        setDatePickerDate(mDatePicker.getYear(), mDatePicker.getMonth(),
-                mDatePicker.getDayOfMonth());
+        setDatePickerTime(mTimePicker.getCurrentHour(),
+                mTimePicker.getCurrentMinute());
         Calendar date = Calendar.getInstance();
         date.set(year, month, day, hour, minute, 0);
         sendResult(Activity.RESULT_OK, date.getTime());
@@ -58,21 +58,22 @@ public class DatePickerFragment extends PickerFragment {
         Bundle args = new Bundle();
         args.putSerializable(ARG_DATE, date);
 
-        DatePickerFragment fragment = new DatePickerFragment();
+        TimePickerFragment fragment = new TimePickerFragment();
         fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     protected View getView(LayoutInflater inflater, ViewGroup container) {
-        return inflater.inflate(R.layout.view_date, container, false);
+        return inflater.inflate(R.layout.view_time, container, false);
     }
 
     @Override
     protected void buildPickerView(View v) {
-        mDatePicker = (DatePicker) v.findViewById(R.id.view_date_date_picker);
-        mDatePicker.init(year, month, day, null);
-        mButtonOk = (Button) v.findViewById(R.id.view_date_picker_button);
+        mTimePicker = (TimePicker) v.findViewById(R.id.view_time_time_picker);
+        mTimePicker.setCurrentHour(hour);
+        mTimePicker.setCurrentMinute(minute);
+        mButtonOk = (Button) v.findViewById(R.id.view_time_picker_button);
         mButtonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -23,15 +23,19 @@ public class CrimeFragment extends Fragment {
 
     private static final String ARG_CRIME_ID = "crime_id";
     private static final String DIALOG_DATE = "DialogDate";
+    private static final String DIALOG_TIME = "DialogTime";
 
     private SimpleDateFormat dtFormat = new SimpleDateFormat("MM/dd/yyyy");
+    private SimpleDateFormat tmFormat = new SimpleDateFormat("hh:mm");
 
     private static final int REQUEST_DATE = 0;
 
     private Crime mCrime;
     private EditText mTitleField;
     private Button mDateButton;
+    private Button mTimeButton;
     private CheckBox mSolvedCheckBox;
+
 
     public static CrimeFragment newInstance(UUID crimeId) {
         Bundle args = new Bundle();
@@ -61,6 +65,8 @@ public class CrimeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
 
+
+
         mTitleField = (EditText) v.findViewById(R.id.crime_title);
         mTitleField.setText(mCrime.getTitle());
         mTitleField.addTextChangedListener(new TextWatcher() {
@@ -85,10 +91,40 @@ public class CrimeFragment extends Fragment {
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager manager = getFragmentManager();
-                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
-                dialog.show(manager, DIALOG_DATE);
+                boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+                if (tabletSize) {
+                    FragmentManager manager = getFragmentManager();
+                    DatePickerFragment datePicker = new DatePickerFragment();
+                    PickerFragment dialog = datePicker.newInstance(mCrime.getDate());
+                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
+                    dialog.show(manager, DIALOG_DATE);
+                } else {
+                    Intent intent = new Intent(CrimeFragment.this.getActivity(),
+                            DatePickerActivity.class);
+                    intent.putExtra(PickerFragment.EXTRA_DATE, mCrime.getDate());
+                    startActivityForResult(intent, REQUEST_DATE);
+                }
+            }
+        });
+
+        mTimeButton = (Button) v.findViewById(R.id.crime_time);
+        updateTime();
+        mTimeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
+                if (tabletSize) {
+                    FragmentManager manager = getFragmentManager();
+                    TimePickerFragment timePicker = new TimePickerFragment();
+                    PickerFragment dialog = timePicker.newInstance(mCrime.getDate());
+                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
+                    dialog.show(manager, DIALOG_TIME);
+                } else {
+                    Intent intent = new Intent(CrimeFragment.this.getActivity(),
+                            TimePickerActivity.class);
+                    intent.putExtra(PickerFragment.EXTRA_DATE, mCrime.getDate());
+                    startActivityForResult(intent, REQUEST_DATE);
+                }
             }
         });
 
@@ -115,7 +151,13 @@ public class CrimeFragment extends Fragment {
                     .getSerializableExtra(DatePickerFragment.EXTRA_DATE);
             mCrime.setDate(date);
             updateDate();
+            updateTime();
         }
+
+    }
+
+    private void updateTime() {
+        mTimeButton.setText(tmFormat.format(mCrime.getDate()));
     }
 
     private void updateDate() {
