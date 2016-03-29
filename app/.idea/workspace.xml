@@ -10,6 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd2ef17-e563-4f77-9094-d112f287973f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java" afterPath="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,24 +44,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrimeLab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java">
+      <file leaf-file-name="CrimeFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+            <state vertical-scroll-proportion="-1.039146">
+              <caret line="183" column="14" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3683#3909#0" expanded="true" />
+                <element signature="e#3908#3909#0" expanded="true" />
+                <element signature="e#4022#4470#0" expanded="true" />
+                <element signature="e#4303#4343#0" expanded="true" />
+                <element signature="e#4469#4470#0" expanded="true" />
+                <element signature="e#4709#4873#0" expanded="true" />
+                <element signature="e#4872#4873#0" expanded="true" />
+                <element signature="e#7155#7375#0" expanded="true" />
+                <element signature="e#7374#7375#0" expanded="true" />
+                <element signature="e#8626#8685#0" expanded="true" />
+                <element signature="e#8998#9037#0" expanded="true" />
+                <element signature="e#9083#9124#0" expanded="true" />
+                <element signature="e#9368#9411#0" expanded="true" />
+                <element signature="e#9452#9501#0" expanded="true" />
+                <element signature="e#9538#9640#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -68,49 +75,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+              <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
               <folding>
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrimeDbSchema.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrimeFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3096085">
-              <caret line="166" column="58" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3893#4341#0" expanded="true" />
-                <element signature="e#4174#4214#0" expanded="true" />
-                <element signature="e#4340#4341#0" expanded="true" />
-                <element signature="e#4579#4743#0" expanded="true" />
-                <element signature="e#4742#4743#0" expanded="true" />
-                <element signature="e#6619#6620#0" expanded="true" />
-                <element signature="e#6689#6690#0" expanded="true" />
-                <element signature="e#6826#6865#0" expanded="true" />
-                <element signature="e#6911#6952#0" expanded="true" />
-                <element signature="e#7196#7239#0" expanded="true" />
-                <element signature="e#7280#7329#0" expanded="true" />
-                <element signature="e#7366#7468#0" expanded="true" />
+                <element signature="e#1110#1111#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,6 +95,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleBuildTreeViewConfiguration">
+    <option name="SHOW_GENERIC_MESSAGES" value="false" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1671,17 +1641,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimePagerActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/SingleFragmentActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/menu/fragment_crime_list.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_crime.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout-land/fragment_crime.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/CrimeBaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/CrimeCursorWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_crime.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout-land/fragment_crime.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java" />
       </list>
     </option>
@@ -1697,8 +1667,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="88" />
+    <option name="x" value="18" />
+    <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="577" />
   </component>
@@ -1725,113 +1695,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="criminalintent" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -1961,7 +1826,152 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment_crime.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="criminalintent" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1974,6 +1984,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2147,15 +2158,25 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="88" width="1260" height="577" extended-state="0" />
+    <frame x="18" y="23" width="1260" height="577" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2167,7 +2188,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2176,9 +2197,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2204,22 +2224,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java</url>
           <line>181</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java</url>
-          <line>165</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java</url>
-          <line>163</line>
+          <line>237</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2232,66 +2246,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3893#4341#0" expanded="true" />
-            <element signature="e#4174#4214#0" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4579#4743#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#6619#6620#0" expanded="true" />
-            <element signature="e#6689#6690#0" expanded="true" />
-            <element signature="e#6826#6865#0" expanded="true" />
-            <element signature="e#6911#6952#0" expanded="true" />
-            <element signature="e#7196#7239#0" expanded="true" />
-            <element signature="e#7280#7329#0" expanded="true" />
-            <element signature="e#7366#7468#0" expanded="true" />
+            <element signature="e#3683#3909#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#4022#4470#0" expanded="true" />
+            <element signature="e#4303#4343#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+            <element signature="e#4709#4873#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#7155#7375#0" expanded="true" />
+            <element signature="e#7374#7375#0" expanded="true" />
+            <element signature="e#8626#8685#0" expanded="true" />
+            <element signature="e#8998#9037#0" expanded="true" />
+            <element signature="e#9083#9124#0" expanded="true" />
+            <element signature="e#9368#9411#0" expanded="true" />
+            <element signature="e#9452#9501#0" expanded="true" />
+            <element signature="e#9538#9640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <folding>
+            <element signature="e#1110#1111#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2308,9 +2293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2318,7 +2300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2327,13 +2308,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2342,7 +2317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2352,18 +2326,85 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3893#4341#0" expanded="true" />
-            <element signature="e#4174#4214#0" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4579#4743#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#6619#6620#0" expanded="true" />
-            <element signature="e#6689#6690#0" expanded="true" />
-            <element signature="e#6826#6865#0" expanded="true" />
-            <element signature="e#6911#6952#0" expanded="true" />
-            <element signature="e#7196#7239#0" expanded="true" />
-            <element signature="e#7280#7329#0" expanded="true" />
-            <element signature="e#7366#7468#0" expanded="true" />
+            <element signature="e#3683#3909#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#4022#4470#0" expanded="true" />
+            <element signature="e#4303#4343#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+            <element signature="e#4709#4873#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#7155#7375#0" expanded="true" />
+            <element signature="e#7374#7375#0" expanded="true" />
+            <element signature="e#8626#8685#0" expanded="true" />
+            <element signature="e#8998#9037#0" expanded="true" />
+            <element signature="e#9083#9124#0" expanded="true" />
+            <element signature="e#9368#9411#0" expanded="true" />
+            <element signature="e#9452#9501#0" expanded="true" />
+            <element signature="e#9538#9640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="48" selection-start-line="116" selection-start-column="48" selection-end-line="116" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <folding>
+            <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3683#3909#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#4022#4470#0" expanded="true" />
+            <element signature="e#4303#4343#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+            <element signature="e#4709#4873#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#7155#7375#0" expanded="true" />
+            <element signature="e#7374#7375#0" expanded="true" />
+            <element signature="e#8626#8685#0" expanded="true" />
+            <element signature="e#8998#9037#0" expanded="true" />
+            <element signature="e#9083#9124#0" expanded="true" />
+            <element signature="e#9368#9411#0" expanded="true" />
+            <element signature="e#9452#9501#0" expanded="true" />
+            <element signature="e#9538#9640#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2380,9 +2421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2398,13 +2436,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2415,18 +2447,21 @@
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3893#4341#0" expanded="true" />
-            <element signature="e#4174#4214#0" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4579#4743#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#6619#6620#0" expanded="true" />
-            <element signature="e#6689#6690#0" expanded="true" />
-            <element signature="e#6826#6865#0" expanded="true" />
-            <element signature="e#6911#6952#0" expanded="true" />
-            <element signature="e#7196#7239#0" expanded="true" />
-            <element signature="e#7280#7329#0" expanded="true" />
-            <element signature="e#7366#7468#0" expanded="true" />
+            <element signature="e#3683#3909#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#4022#4470#0" expanded="true" />
+            <element signature="e#4303#4343#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+            <element signature="e#4709#4873#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#7155#7375#0" expanded="true" />
+            <element signature="e#7374#7375#0" expanded="true" />
+            <element signature="e#8626#8685#0" expanded="true" />
+            <element signature="e#8998#9037#0" expanded="true" />
+            <element signature="e#9083#9124#0" expanded="true" />
+            <element signature="e#9368#9411#0" expanded="true" />
+            <element signature="e#9452#9501#0" expanded="true" />
+            <element signature="e#9538#9640#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2443,7 +2478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2451,7 +2485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2459,9 +2492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2477,9 +2507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2497,37 +2524,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_crime_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_crime_list.xml">
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/menu/fragment_crime_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2556,43 +2566,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="1788" column="0" selection-start-line="1788" selection-start-column="0" selection-end-line="1788" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeBaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1743772">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeCursorWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout-land/fragment_crime.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="e#384#411#0" expanded="true" />
-            <element signature="e#712#738#0" expanded="true" />
-            <element signature="e#866#895#0" expanded="true" />
-            <element signature="e#1562#1590#0" expanded="true" />
-            <element signature="e#2104#2132#0" expanded="true" />
-            <element signature="e#2354#2381#0" expanded="true" />
-          </folding>
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_crime.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="61" selection-end-column="51" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="e#384#411#0" expanded="true" />
-            <element signature="e#712#738#0" expanded="true" />
-            <element signature="e#866#895#0" expanded="true" />
-            <element signature="e#1421#1449#0" expanded="true" />
-            <element signature="e#1698#1726#0" expanded="true" />
-            <element signature="e#1973#2000#0" expanded="true" />
-          </folding>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0676156">
+          <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46619216">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -2604,80 +2632,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeBaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1743772">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeDbSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.03914591">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/CrimeCursorWrapper.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.455516">
+          <caret line="3351" column="0" selection-start-line="3351" selection-start-column="0" selection-end-line="3351" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeLab.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/Crime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        <state vertical-scroll-proportion="1.535433">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bignerdranch/android/criminalintent/CrimeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3096085">
-          <caret line="166" column="58" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="58" />
+        <state vertical-scroll-proportion="-1.039146">
+          <caret line="183" column="14" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3893#4341#0" expanded="true" />
-            <element signature="e#4174#4214#0" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4579#4743#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#6619#6620#0" expanded="true" />
-            <element signature="e#6689#6690#0" expanded="true" />
-            <element signature="e#6826#6865#0" expanded="true" />
-            <element signature="e#6911#6952#0" expanded="true" />
-            <element signature="e#7196#7239#0" expanded="true" />
-            <element signature="e#7280#7329#0" expanded="true" />
-            <element signature="e#7366#7468#0" expanded="true" />
+            <element signature="e#3683#3909#0" expanded="true" />
+            <element signature="e#3908#3909#0" expanded="true" />
+            <element signature="e#4022#4470#0" expanded="true" />
+            <element signature="e#4303#4343#0" expanded="true" />
+            <element signature="e#4469#4470#0" expanded="true" />
+            <element signature="e#4709#4873#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#7155#7375#0" expanded="true" />
+            <element signature="e#7374#7375#0" expanded="true" />
+            <element signature="e#8626#8685#0" expanded="true" />
+            <element signature="e#8998#9037#0" expanded="true" />
+            <element signature="e#9083#9124#0" expanded="true" />
+            <element signature="e#9368#9411#0" expanded="true" />
+            <element signature="e#9452#9501#0" expanded="true" />
+            <element signature="e#9538#9640#0" expanded="true" />
           </folding>
         </state>
       </provider>

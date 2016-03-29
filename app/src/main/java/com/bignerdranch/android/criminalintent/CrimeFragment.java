@@ -1,6 +1,7 @@
 package com.bignerdranch.android.criminalintent;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.format.DateFormat;
@@ -42,6 +44,7 @@ public class CrimeFragment extends Fragment {
     private CheckBox mSolvedCheckBox;
     private Button mReportButton;
     private Button mSuspectButton;
+    private Button mSuspectPhoneNumberButton;
 
     public static CrimeFragment newInstance(UUID crimeId) {
         Bundle args = new Bundle();
@@ -129,10 +132,19 @@ public class CrimeFragment extends Fragment {
 
         final Intent pickContact = new Intent(Intent.ACTION_PICK,
                 ContactsContract.Contacts.CONTENT_URI);
+
         mSuspectButton = (Button) v.findViewById(R.id.crime_suspect);
         mSuspectButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivityForResult(pickContact, REQUEST_CONTACT);
+            }
+        });
+
+        mSuspectPhoneNumberButton = (Button) v.findViewById(R.id.call_suspect);
+        updateSuspect();
+        mSuspectPhoneNumberButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
             }
         });
 
@@ -160,32 +172,75 @@ public class CrimeFragment extends Fragment {
                     .getSerializableExtra(DatePickerFragment.EXTRA_DATE);
             mCrime.setDate(date);
             updateDate();
+
         } else if (requestCode == REQUEST_CONTACT && data != null) {
-            Uri contactUri = data.getData();
+            String contactId = "-1";
+
+            Uri uri = data.getData();
             //Specify which fields you want your query to return values for
-            String[] queryFields = new String[] {
-                    ContactsContract.Contacts.DISPLAY_NAME
+            String[] columns = new String[] {
+                    ContactsContract.Contacts.DISPLAY_NAME,
+                    ContactsContract.Contacts._ID
             };
-            //Perform your query here - the contactUri is like a where clause here
             Cursor c = getActivity().getContentResolver()
-                    .query(contactUri, queryFields, null, null, null);
+                    .query(uri, columns, null, null, null);
 
             try {
-                //Double-check that you actually got results
-                if (c.getCount() == 0) {
-                    return;
+                if (c.getCount() != 0) {
+                    c.moveToFirst();
+                    String suspect = c.getString(0);
+                    contactId = c.getString(1);
+                    mCrime.setSuspect(suspect);
                 }
+            } catch (Exception e) {
+                AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this.getActivity());
 
-                //Pull out the first column of the first row of data -
-                //That is your suspects name.
-                c.moveToFirst();
-                String suspect = c.getString(0);
+                dlgAlert.setMessage("No Contact found by that name");
+                dlgAlert.setTitle("Error Message...");
+                dlgAlert.setPositiveButton("OK", null);
+                dlgAlert.setCancelable(true);
+                dlgAlert.create().show();
 
-                mCrime.setSuspect(suspect);
-                mSuspectButton.setText(suspect);
+                dlgAlert.setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                            return;
+                            }
+                            });
             } finally {
                 c.close();
             }
+            uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
+            columns = new String[]{ContactsContract.CommonDataKinds.Phone.NUMBER};
+            String where = ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ? ";
+            String[] whereArgs = new String[] {contactId.toString()};
+
+            c = getActivity().getContentResolver().query(
+                    uri, columns, where, whereArgs, null);
+            try {
+                if (c.getCount() != 0) {
+                    c.moveToFirst();
+                    mCrime.setSuspectPhoneNumber(c.getString(0));
+                } else {
+                    mCrime.setSuspectPhoneNumber(null);
+                }
+
+            } finally {
+                c.close();
+            }
+            updateSuspect();
+        }
+    }
+
+    private void updateSuspect() {
+        mSuspectButton.setText(mCrime.getSuspect());
+
+        if (mCrime.getSuspectPhoneNumber() == "" || mCrime.getSuspectPhoneNumber() == null ) {
+            mSuspectPhoneNumberButton.setEnabled(false);
+            mSuspectPhoneNumberButton.setText("No Phone Number associated");
+        } else {
+            mSuspectPhoneNumberButton.setText(getString(R.string.crime_call_suspect, mCrime.getSuspect()));
+            mSuspectPhoneNumberButton.setEnabled(true);
         }
     }
 
