@@ -10,7 +10,7 @@ import database.CrimeDbSchema.CrimeTable;
  * Created by EdwardLichtman on 3/23/16.
  */
 public class CrimeBaseHelper extends SQLiteOpenHelper {
-    private static final int VERSION = 1;
+    private static final int VERSION = 3;
     private static final String DATABASE_NAME = "crimeBase.db";
 
     public CrimeBaseHelper(Context context) {
@@ -25,7 +25,9 @@ public class CrimeBaseHelper extends SQLiteOpenHelper {
                 CrimeTable.Cols.TITLE + ", " +
                 CrimeTable.Cols.DATE + ", " +
                 CrimeTable.Cols.SOLVED + ", " +
-                CrimeTable.Cols.SUSPECT + ")");
+                CrimeTable.Cols.SUSPECT + ", " +
+                CrimeTable.Cols.SUSPECTPHONENUMBER +
+                ")");
 
     }
 
