@@ -140,23 +140,16 @@ public class CrimeFragment extends Fragment {
             }
         });
 
-        mSuspectPhoneNumberButton = (Button) v.findViewById(R.id.call_suspect);
-        updateSuspect();
-        mSuspectPhoneNumberButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-            }
-        });
-
-        if (mCrime.getSuspect() != null) {
-            mSuspectButton.setText(mCrime.getSuspect());
-        }
-
         PackageManager packageManager = getActivity().getPackageManager();
         if (packageManager.resolveActivity(pickContact,
                 PackageManager.MATCH_DEFAULT_ONLY) == null) {
             mSuspectButton.setEnabled(false);
         }
+
+        mSuspectPhoneNumberButton = (Button) v.findViewById(R.id.call_suspect);
+
+        updateSuspect();
+
 
         return v;
     }
@@ -233,7 +226,9 @@ public class CrimeFragment extends Fragment {
     }
 
     private void updateSuspect() {
-        mSuspectButton.setText(mCrime.getSuspect());
+        if (mCrime.getSuspect() != "" || mCrime.getSuspect() != null) {
+            mSuspectButton.setText(mCrime.getSuspect());
+        }
 
         if (mCrime.getSuspectPhoneNumber() == "" || mCrime.getSuspectPhoneNumber() == null ) {
             mSuspectPhoneNumberButton.setEnabled(false);
@@ -241,6 +236,17 @@ public class CrimeFragment extends Fragment {
         } else {
             mSuspectPhoneNumberButton.setText(getString(R.string.crime_call_suspect, mCrime.getSuspect()));
             mSuspectPhoneNumberButton.setEnabled(true);
+        }
+
+        if (mCrime.getSuspectPhoneNumber() != null) {
+            final Intent callContact = new Intent(Intent.ACTION_DIAL,
+                    Uri.parse("tel:" + mCrime.getSuspectPhoneNumber()));
+
+            mSuspectPhoneNumberButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    startActivity(callContact);
+                }
+            });
         }
     }
 
