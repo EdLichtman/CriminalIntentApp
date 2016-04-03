@@ -33,6 +33,8 @@ public class CrimeFragment extends Fragment {
 
     private static final String ARG_CRIME_ID = "crime_id";
     private static final String DIALOG_DATE = "DialogDate";
+    private static final String DIALOG_PHOTO = "DialogPhoto";
+
 
 
     private SimpleDateFormat dtFormat = new SimpleDateFormat("MM/dd/yyyy");
@@ -40,6 +42,7 @@ public class CrimeFragment extends Fragment {
     private static final int REQUEST_DATE = 0;
     private static final int REQUEST_CONTACT = 1;
     private static final int REQUEST_PHOTO = 2;
+    private static final int REQUEST_PHOTO_INFLATABLE = 3;
 
     private Crime mCrime;
     private File mPhotoFile;
@@ -254,6 +257,18 @@ public class CrimeFragment extends Fragment {
             Bitmap bitmap = PictureUtils.getScaledBitmap(
                     mPhotoFile.getPath(), getActivity());
             mPhotoView.setImageBitmap(bitmap);
+
+            mPhotoView.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    FragmentManager manager = getFragmentManager();
+                    CrimeSceneFragment dialog = CrimeSceneFragment.newInstance(mPhotoFile);
+                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_PHOTO_INFLATABLE);
+                    dialog.show(manager, DIALOG_PHOTO);
+                }
+            });
+
         }
     }
 }
