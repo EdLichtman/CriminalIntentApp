@@ -263,9 +263,7 @@ public class CrimeFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     FragmentManager manager = getFragmentManager();
-                    CrimeSceneFragment dialog = CrimeSceneFragment.newInstance(mPhotoFile);
-                    dialog.setTargetFragment(CrimeFragment.this, REQUEST_PHOTO_INFLATABLE);
-                    dialog.show(manager, DIALOG_PHOTO);
+                    CrimeSceneFragment.newInstance(mPhotoFile).show(manager, DIALOG_PHOTO);
                 }
             });
 

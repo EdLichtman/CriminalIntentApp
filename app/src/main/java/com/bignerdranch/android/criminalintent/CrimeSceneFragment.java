@@ -33,17 +33,14 @@ public class CrimeSceneFragment extends DialogFragment {
         super.onCreateDialog(savedInstanceState);
 
         File crimeSceneFile = (File) getArguments().getSerializable(ARG_CRIME_FILE);
-
         Bitmap imageFile = PictureUtils.getScaledBitmap(crimeSceneFile.getPath(), getActivity());
-
         View v = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_crime_scene, null);
 
-        ImageView imageView = (ImageView) v.findViewById(R.id.dialog_crime_scene);
+        ImageView imageView = (ImageView) v.findViewById(R.id.crime_photo);
         imageView.setImageBitmap(imageFile);
 
         return new AlertDialog.Builder(getActivity())
                 .setView(imageView)
-                .setTitle(R.string.crime_scene_photo)
                 .create();
     }
 }
