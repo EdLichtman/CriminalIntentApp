@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
+import android.view.View;
 
 /**
  * Created by EdwardLichtman on 4/2/16.
@@ -40,5 +41,10 @@ public class PictureUtils {
 
         //Read in and create final bitmap
         return BitmapFactory.decodeFile(path, options);
+    }
+
+    public static Bitmap getScaledBitmap(String path, View container)
+    {
+        return getScaledBitmap(path, container.getWidth(), container.getHeight());
     }
 }
